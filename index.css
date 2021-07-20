@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  color: #1b4101;
+}
+body {
+  background: rgb(178, 244, 198);
+  font-family: "Roboto", sans-serif;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  width: 300px;
+  height: 400px;
+  background: #e6ffb5;
+  display: grid;
+  grid-template: 1fr 2fr 1fr / 1fr;
+  border-radius: 2%;
+  box-shadow: -2px 3px 19px 0px #3a3535cc;
+}
+.header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.header p {
+  margin-block-start: 5px;
+  font-weight: 300;
+  font-size: 1.9rem;
+}
+.circle img {
+  width: 40px;
+  height: 40px;
+  background: #aeacae;
+  border-radius: 70%;
+  margin-inline-end: 10px;
+}
+.main figure {
+  background: #aeacae;
+  width: 100%;
+  height: 200px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  padding: 10px;
+}
+.footer p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.footer__buttons {
+  display: grid;
+  grid-template: 1fr / 2fr 2fr 1fr 1fr;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  margin-inline-end: 15px;
+  cursor: pointer;
+}
+.share svg {
+  padding: 14px;
+}
+
+.heart {
+  background-image: url("https://i.ibb.co/8sTbrLt/1-MTZW1-G1m-E7-LSX1-Cnh-TYe-HA.png");
+  background-size: auto 50px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+.heart-animation {
+  animation: heart-beat 0.8s steps(28) 1 forwards;
+}
+
+@keyframes heart-beat {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
